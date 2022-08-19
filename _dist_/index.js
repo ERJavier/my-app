@@ -2,6 +2,11 @@ const urlBase = "https://platzi-avo.vercel.app";
 
 const appNode = document.querySelector('#app');
 
+appNode.addEventListener("click", (event) => {
+    if(event.target.nodeName === "H2"){
+        window.alert("Hola")
+    }
+});
 //intl
 //format dates and currency
 
@@ -33,6 +38,7 @@ window
             const title = document.createElement("h2");
             title.textContent = item.name;
             title.className = "mt-1 text-sm text-gray-500"
+
 
             //crear precio
             const price = document.createElement("div");
